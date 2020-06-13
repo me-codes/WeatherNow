@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: -moz-repeating-linear-gradient(rgb(255, 154, 158), rgb(250, 208, 196));
+    font-family: sans-serif;
+    color: #142a38;
+
+}
