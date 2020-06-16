@@ -19,7 +19,7 @@ button.addEventListener('click',function (name) {
     city.innerHTML = "<HR color='white'>"+nameValue+"<HR color='white'>";
     summary.innerHTML = "Summary : "+descValue;
     temp.innerHTML = "Temperature : "+tempValue+"&deg C";
-    iconw.innerHTML = "<img width='100pt' height='100pt' src='http://openweathermap.org/img/w/" +iconweather+ ".png' alt='Icon depicting current weather.'>"
+    iconw.innerHTML = "<img width='100pt' height='100pt' src='https://openweathermap.org/img/w/" +iconweather+ ".png' alt='Icon depicting current weather.'>"
     humidity1.innerHTML="Humidity : "+humidi+"%";
     wind1.innerHTML = "Wind speed : "+wind+"m/s";
     cityname.value ="";
