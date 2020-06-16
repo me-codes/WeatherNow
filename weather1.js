@@ -26,3 +26,10 @@ button.addEventListener('click',function (name) {
 })
 .catch(err =>alert("Wrong city name!"))
 })
+
+document.querySelector(".cityname")
+    .addEventListener("keyup", function(e) {
+        if (e.code === 'Enter') {
+           document.querySelector(".button").click();
+        }
+    });
