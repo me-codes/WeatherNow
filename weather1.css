@@ -27,3 +27,8 @@ body{
     bottom:0;
     width:100%;
 }
+
+.city{
+    background-color: rgb(20, 42, 56);
+    color:antiquewhite;
+}
