@@ -12,6 +12,8 @@ button.addEventListener('click',function(name) {
         alert("please enter city name....")
         document.location = "https://github.com/me-codes/WeatherNow/";
     }
+    else
+    {
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityname.value+'&units=metric&APPID=4518fda2354200ccbb21eb2e9b2bb395')
 .then(response => response.json())
 .then(data => {
@@ -28,9 +30,10 @@ button.addEventListener('click',function(name) {
     humidity1.innerHTML="Humidity : "+humidi+"%";
     wind1.innerHTML = "Wind speed : "+wind+"m/s";
     cityname.value ="";
-})
+})}
 
 .catch(err =>alert("Wrong city name!"))
+   
 })
 
 document.querySelector(".cityname")
