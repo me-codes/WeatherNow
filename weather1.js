@@ -10,7 +10,7 @@ var wind1=document.querySelector('.wind11')
 button.addEventListener('click',function(name) {
     if(cityname.value === ""){
         alert("please enter city name....")
-        document.location = "https://github.com/me-codes/WeatherNow/";
+        document.location = "https://me-codes.github.io/WeatherNow/";
     }
     else
     {
@@ -30,10 +30,10 @@ button.addEventListener('click',function(name) {
     humidity1.innerHTML="Humidity : "+humidi+"%";
     wind1.innerHTML = "Wind speed : "+wind+"m/s";
     cityname.value ="";
-})}
+})
 
 .catch(err =>alert("Wrong city name!"))
-   
+    }
 })
 
 document.querySelector(".cityname")
