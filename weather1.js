@@ -7,6 +7,10 @@ var iconw = document.querySelector('.icon5')
 var humidity1=document.querySelector('.humi')
 var wind1=document.querySelector('.wind11')
 button.addEventListener('click',function (name) {
+    if(cityname === ""){
+        alert("please enter city name....")
+        exit(0);
+    }
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityname.value+'&units=metric&APPID=4518fda2354200ccbb21eb2e9b2bb395')
 .then(response => response.json())
 .then(data => {
