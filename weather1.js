@@ -10,7 +10,7 @@ var wind1=document.querySelector('.wind11')
 button.addEventListener('click',function(name) {
     if(cityname.value === ""){
         alert("please enter city name....")
-        document.location = "https://me-codes.github.io/WeatherNow/";
+       // document.location = "https://me-codes.github.io/WeatherNow/";
     }
     else
     {
