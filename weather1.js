@@ -6,13 +6,13 @@ var summary = document.querySelector('.summary')
 var iconw = document.querySelector('.icon5')
 var humidity1=document.querySelector('.humi')
 var wind1=document.querySelector('.wind11')
-button.addEventListener('click',function (name) {
+
 button.addEventListener('click',function(name) {
     if(cityname.value === ""){
-        alert("please enter city name...")
-        document.location = "https://me-codes.github.io/WeatherNow/";
+        alert("please enter city name....")
+        document.location = "index.html";
     }
-    fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityname.value+'&units=metric&APPID=4518fda2354200ccbb21eb2e9b2bb395')
+    fetch('http://api.openweathermap.org/data/2.5/weather?q='+cityname.value+'&units=metric&APPID=4518fda2354200ccbb21eb2e9b2bb395')
 .then(response => response.json())
 .then(data => {
     var tempValue = data['main']['temp'];
@@ -24,11 +24,12 @@ button.addEventListener('click',function(name) {
     city.innerHTML = "<HR color='white'>"+nameValue+"<HR color='white'>";
     summary.innerHTML = "Summary : "+descValue;
     temp.innerHTML = "Temperature : "+tempValue+"&deg C";
-    iconw.innerHTML = "<img width='100pt' height='100pt' src='https://openweathermap.org/img/w/" +iconweather+ ".png' alt='Icon depicting current weather.'>"
+    iconw.innerHTML = "<img width='100pt' height='100pt' src='http://openweathermap.org/img/w/" +iconweather+ ".png' alt='Icon depicting current weather.'>"
     humidity1.innerHTML="Humidity : "+humidi+"%";
     wind1.innerHTML = "Wind speed : "+wind+"m/s";
     cityname.value ="";
 })
+
 .catch(err =>alert("Wrong city name!"))
 })
 
