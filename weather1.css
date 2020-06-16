@@ -10,7 +10,7 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: -moz-repeating-linear-gradient(rgb(255, 154, 158), rgb(250, 208, 196));
+    background: linear-gradient(rgb(255, 154, 158), rgb(250, 208, 196));
     font-family: sans-serif;
     color: #142a38;
 
