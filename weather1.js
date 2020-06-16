@@ -10,7 +10,7 @@ button.addEventListener('click',function (name) {
 button.addEventListener('click',function(name) {
     if(cityname.value === ""){
         alert("please enter city name...")
-        document.location = "index.html";
+        document.location = "https://me-codes.github.io/WeatherNow/";
     }
     fetch('https://api.openweathermap.org/data/2.5/weather?q='+cityname.value+'&units=metric&APPID=4518fda2354200ccbb21eb2e9b2bb395')
 .then(response => response.json())
