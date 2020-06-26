@@ -2,6 +2,7 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
   <head>
       <link href="https://fonts.googleapis.com/css?family=Akronim|Sacramento&display=swap" rel="stylesheet">
     <title>WeatherNow</title>
@@ -9,7 +10,6 @@
     <link rel='stylesheet' href="weather1.css">
   </head>
   <body>
-
        <div class="class1">
            <input type="text" class="cityname" placeholder="Enter City">
            <input type="submit" class="button" value="Search"><br>
@@ -23,10 +23,16 @@
                 <h4 class="humi" align="center"></h4><BR>
                 <h4 class="wind11" align="center"></h4><br>
        </div>
+
+       <svg id="darkmode" width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <path class="sun" d="M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z" fill="#FBC609"/>
+       </svg>
 <footer class="footer"><p align="center">
     Varun Rao - 2020
 </p>
 </footer>
   <script type="text/javascript" src="weather1.js"></script>
+  <script src="anime.min.js"></script>
+  <script type="text/javascript" src="anim.js"></script>
   </body>
 </html>
