@@ -5,12 +5,12 @@
 }
 
 body{
-    height:100vh;
-    display:flex;
-    justify-content: center;
+    height: 100vh;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     background: linear-gradient(rgb(255, 154, 158), rgb(250, 208, 196));
+    justify-content:center;
+    align-items: center;
     font-family: sans-serif;
     color: #142a38;
 
@@ -27,8 +27,16 @@ body{
     bottom:0;
     width:100%;
 }
-
 .city{
     background-color: rgb(20, 42, 56);
     color:antiquewhite;
+}
+
+svg{
+    cursor: pointer;
+}
+.modeinfo{
+    align-items: center;
+    flex-direction: column;
+
 }
